@@ -1,67 +1,82 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="Welcome to Ocaña.">
-	Hola mundo
+	<div class="container">
+		<div class="wrapper">
+			<div class="box img1">s</div>
+			<div class="box img2">s</div>
+			<div class="box img3">s</div>
+			<div class="box img4">s</div>
+			<div class="box img5">s</div>
+			<div class="box img6">s</div>
+			<div class="box img7">s</div>
+			<div class="box img8">s</div>
+			<div class="box img9">s</div>
+			<div class="box img10">s</div>
+		</div>
+	</div>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
+	.wrapper{
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
+		grid-template-rows: 120px 120px 120px 120px;
+		grid-template-areas:
+		"img1 img1 img2 img3"
+		"img1 img1 img6 img6"
+		"img4 img5 img6 img6"
+		"img7 img8 img9 img10" ;
 	}
+	.box {
+		display: flex;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		color: white;
+	}
+	.img1 {
+		grid-area: img1;
+		background: orange;
+	}
+	.img2 {
+		grid-area: img2;
+		background: rgb(106, 236, 145);
+	}
+	.img3 {
+		grid-area: img3;
+		background: rgb(139, 37, 6);
+	}
+	.img4 {
+		grid-area: img4;
+		background: rgb(97, 81, 243);
+	}
+	.img5 {
+		grid-area: img5;
+		background: rgb(160, 17, 105);
+	}
+	.img6 {
+		grid-area: img6;
+		background: rgb(162, 31, 202);
+	}
+	.img7 {
+		grid-area: img7;
+		background: rgb(13, 186, 230);
+	}
+	.img8 {
+		grid-area: img8;
+		background: rgb(3, 121, 72);
+	}
+	.img9 {
+		grid-area: img9;
+		background: rgb(217, 241, 241);
+	}
+	.img10 {
+		grid-area: img10;
+		background: rgb(73, 60, 34);
+	}
+
 </style>
