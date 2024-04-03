@@ -19,7 +19,24 @@ import Card from "../components/Card.astro";
 		</div>
 	</div>
 </Layout>
-
+<footer class="footer">
+	<div class="col1">
+		<h3>Column 1</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus massa.</p>
+	</div>
+	<div class="col2">
+		<h3>Column 2</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus massa.</p>
+	</div>
+	<div class="col3">
+		<h3>Column 3</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus massa.</p>
+	</div>
+	<div class="col4">
+		<h3>Column 4</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus massa.</p>
+	</div>
+</footer>
 <style>
 	.wrapper{
 		display: grid;
@@ -78,5 +95,38 @@ import Card from "../components/Card.astro";
 		grid-area: img10;
 		background: rgb(73, 60, 34);
 	}
+	.footer {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr;
+			grid-template-areas: 
+			"col1 col2 col3 col4 col0 col0 col0 col0";
+			background-color: #f8f9fa;
+			padding: 20px;
+			justify-content: center;
+		}
 
+		.col1 {
+			grid-area: col1;
+			text-align: left;
+			margin-right: 10px;
+		}
+
+		.col2 {
+			grid-area: col2;
+			text-align: left;
+			margin-right: 10px;
+		}
+
+		.col3 {
+			grid-area: col3;
+			text-align: left;
+			margin-right: 10px;
+		}
+
+		.col4 {
+			grid-area: col4;
+			text-align: left;
+			margin-right: 10px;
+		}
 </style>
