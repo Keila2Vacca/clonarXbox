@@ -6,15 +6,62 @@ import { Icon } from "astro-icon/components";
 const items = [
 	{
 		icon: "",
-		name: "opción 1",
+		name: "GAME PASS",
 	},
 	{
 		icon: "",
-		name: "opción 2",
+		name: "JUEGOS",
 	},
 	{
 		icon: "",
-		name: "opción 3",
+		name: "CONSOLAS",
+	},
+	{
+		icon: "",
+		name: "ACCESORIOS",
+	},
+	{
+		icon: "",
+		name: "OFERTAS",
+	},
+	{
+		icon: "",
+		name: "INICIAR SESIÓN",
+	},
+];
+
+const menus = [
+	{
+		name: "Game Pass",
+		icon: "",
+	},
+	{
+		name: "Juegos",
+		icon: "",
+	},
+	{
+		name: "Dispositivos",
+		icon: "",
+	},
+	{
+		name: "Comunidad",
+		icon: "",
+	},
+	{
+		name: "Soporte técnico",
+		icon: "",
+	},
+	{
+		name: "Mi Xbox",
+		icon: "",
+	},
+	{
+		name: "Desarrolladores",
+		icon: "",
+	},
+	{
+		name: "Iniciar sesión",
+		icon: "",
 	},
 ];
 ---
@@ -46,23 +93,30 @@ const items = [
 				/>
 			</div>
 			<menu class="ml-8">
-				<div class="flex items-center">
-					<a
-						class="hover:underline underline-offset-[6px] decoration-2"
-						href="#"
-					>
-						Game Pass
-					</a>
+				{
+					menus.map((menu) => (
+						<div class="inline-block w-[120px] items-center">
+							<a
+								class="hover:underline underline-offset-[6px] decoration-2"
+								href="#"
+							>
+								{menu.name}
+							</a>
 
-					<Icon name="mdi:chevron-down" />
-				</div>
+							<Icon name="mdi:chevron-down" />
+						</div>
+					))
+				}
 			</menu>
 		</header>
 		<div class="relative">
 			<div class="absolute left-28 h-full flex items-center">
-				<h1 class="text-white text-5xl font-bold">
-					FINAL FANTASY XIV
-				</h1>
+				<h1 class="text-white text-5xl font-bold">FINAL FANTASY XIV</h1>
+				<h2 class="text-white text-1xl">
+					Disfruta de una aventura aclamada por la crítica en Xbox
+					Series X|S.
+				</h2>
+				<p class="text-gray">CONSÍGUELO AHORA</p>
 			</div>
 
 			<video
@@ -112,13 +166,19 @@ const items = [
 		height: 100%;
 
 		&:hover {
-			text-decoration: underline; 
-			underline-offset: 6px; 
-			text-decoration:2;
+			text-decoration: underline;
+			underline-offset: 6px;
+			text-decoration-line: 2px;
 		}
 	}
 	nav {
-		height: 60px;
+		color: green;
+		font-weight: bold;
+		align-items: center;
+		justify-content: center;
+		height: 120px;
+		width: 100%;
+		gap: 20px;
 		display: flex;
 	}
 	header {
@@ -130,7 +190,7 @@ const items = [
 		padding: 0;
 		margin: 0;
 	}
-	
+
 	code {
 		font-family:
 			Menlo,
