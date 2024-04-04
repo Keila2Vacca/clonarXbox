@@ -21,31 +21,55 @@ import Card from "../components/Card.astro";
 </Layout>
 <footer class="footer">
 	<div class="col1">
-		<h3>Column 1</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus massa.</p>
+		<h3 class="font-bold">Examinar</h3>
+		<a href="#">
+			<p>Xbox consolas</p>
+			<p>Juegos de Xbox</p>
+			<p>Xbox Game Pass</p>
+			<p>Accesorios para Xbox</p>
+		</a>
+		
 	</div>
 	<div class="col2">
-		<h3>Column 2</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus massa.</p>
+		<h3 class="font-bold">Recursos</h3>
+		<a href="#">
+			<p>Noticias de Xbox</p>
+			<p>Soporte técnico de Xbox</p>
+			<p>Comentarios</p>
+			<p>Estándares de la comunidad</p>
+			<p>Advertencia sobre ataque fotosensibles</p>
+		</a>
+		
 	</div>
 	<div class="col3">
-		<h3>Column 3</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus massa.</p>
+		<h3 class="font-bold">Microsoft Store</h3>
+		<a href="#">
+	    <p>Cuenta de Micrisoft</p>
+		<p>Soporte técnico de Microsoft Store</p>
+		<p>Devoluciones</p>
+		<p>Seguimiento de pedidos</p>
+		</a>
+
 	</div>
 	<div class="col4">
-		<h3>Column 4</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus massa.</p>
+		<h3 class="font-bold">Para desarrolladores</h3>
+		<a href="#">
+			<p>Juegos</p>
+		</a>
 	</div>
 </footer>
 <style>
-	.wrapper{
+	.wrapper {
 		display: grid;
-		grid-template-rows: 120px 120px 120px 120px;
+		grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
 		grid-template-areas:
-		"img1 img1 img2 img3"
-		"img1 img1 img6 img6"
-		"img4 img5 img6 img6"
-		"img7 img8 img9 img10" ;
+			"img1 img1 img2 img2"
+			"img1 img1 img4 img4"
+			"img3 img3 img4 img4"
+			"img5 img5 img6 img6"
+			"img7 img7 img8 img8"
+			"img9 img9 img10 img10"
+			"img9 img9 img10 img10";
 	}
 	.box {
 		display: flex;
@@ -57,76 +81,83 @@ import Card from "../components/Card.astro";
 	}
 	.img1 {
 		grid-area: img1;
-		background: orange;
+		background-image: url('https://assets.xboxservices.com/assets/7c/b2/7cb25873-2a92-47db-998c-cbeebe79b509.jpg?n=Dragons-Dogma-II_Large-tout-0_1083x1222.jpg');
 	}
 	.img2 {
 		grid-area: img2;
-		background: rgb(106, 236, 145);
+		background-image: url('https://assets.xboxservices.com/assets/e0/33/e0330338-5ef6-446e-9f9c-185dee575f6f.jpg?n=XGP-2023_Small-tout-1084_09-18-23_475x534.jpg');
 	}
 	.img3 {
 		grid-area: img3;
-		background: rgb(139, 37, 6);
+		background-image: url('https://assets.xboxservices.com/assets/47/04/4704bd8f-cbf6-4408-9af5-a5b10d8f8c57.jpg?n=Fallout-76_Small-tout-1084_Atlantic-City-Pt2_475x534.jpg');
 	}
 	.img4 {
 		grid-area: img4;
-		background: rgb(97, 81, 243);
+		background-image: url('https://assets.xboxservices.com/assets/76/4f/764f6f3a-7112-4221-9a09-dc9dfe33961c.jpg?n=284993_Large-tout-0_1083x1222.jpg');
 	}
 	.img5 {
 		grid-area: img5;
-		background: rgb(160, 17, 105);
+		background-image: url('https://assets.xboxservices.com/assets/ed/c8/edc87057-92d4-43d2-9816-41368f7721b1.jpg?n=Halo-Infinite_Small-tout-1084_The-Yappening-2_475x534.jpg');
 	}
 	.img6 {
 		grid-area: img6;
-		background: rgb(162, 31, 202);
+		background-image: url('https://assets.xboxservices.com/assets/f5/f6/f5f6724a-2ac5-4f47-863c-e646a1c449fa.jpg?n=2398742_Small-tout-1084_475x534.jpg');
 	}
 	.img7 {
 		grid-area: img7;
-		background: rgb(13, 186, 230);
+		background-image: url('https://assets.xboxservices.com/assets/a5/2a/a52ae26b-b534-4c48-bfdc-6afca86497a7.jpg?n=Elder-Scrolls-Online_Small-tout-1084_Scions-of-Ithelia_475x534_01.jpg');
 	}
 	.img8 {
 		grid-area: img8;
-		background: rgb(3, 121, 72);
+		background-image: url('https://assets.xboxservices.com/assets/b4/e6/b4e673ea-98c6-486d-998b-49466ba912f7.jpg?n=South-Park-Snow-Day_Small-tout-1084_475x534_02.jpg');
 	}
 	.img9 {
 		grid-area: img9;
-		background: rgb(217, 241, 241);
+		background-image: url('https://assets.xboxservices.com/assets/5b/84/5b846e1c-cb13-4fed-87e3-38a14e293d76.jpg?n=63789251_Large-tout-0_1083x1222.jpg');
 	}
 	.img10 {
 		grid-area: img10;
-		background: rgb(73, 60, 34);
+		background-image: url('https://assets.xboxservices.com/assets/d7/58/d758c74c-21f4-4c61-a43e-e20756272a3a.jpg?n=896254_Large-tout-0_1083x1222_01.jpg');
 	}
 	.footer {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-			grid-template-rows: 1fr;
-			grid-template-areas: 
-			"col1 col2 col3 col4 col0 col0 col0 col0";
-			background-color: #f8f9fa;
-			padding: 20px;
-			justify-content: center;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: "col1 col2 col3 col4 col0 col0 col0";
+		background-color: #dbe6e7;
+		padding: 80px;
+		gap: 10px;
+		justify-content: center;
+
+	}
+	p:hover {
+			text-decoration: underline;
+			underline-offset: 6px;
+			text-decoration-line: 2px;
 		}
 
-		.col1 {
-			grid-area: col1;
-			text-align: left;
-			margin-right: 10px;
-		}
 
-		.col2 {
-			grid-area: col2;
-			text-align: left;
-			margin-right: 10px;
-		}
+	.col1 {
+		grid-area: col1;
+		text-align: left;
+		margin-right: 10px;
+	}
 
-		.col3 {
-			grid-area: col3;
-			text-align: left;
-			margin-right: 10px;
-		}
+	.col2 {
+		grid-area: col2;
+		text-align: left;
+		margin-right: 10px;
+	}
 
-		.col4 {
-			grid-area: col4;
-			text-align: left;
-			margin-right: 10px;
-		}
+	.col3 {
+		grid-area: col3;
+		text-align: left;
+		margin-right: 10px;
+	}
+
+	.col4 {
+		grid-area: col4;
+		text-align: left;
+		margin-right: 10px;
+	}
 </style>
